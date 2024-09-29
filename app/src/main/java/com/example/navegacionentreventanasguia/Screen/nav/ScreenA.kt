@@ -17,6 +17,8 @@ import androidx.navigation.NavController
 import com.example.navegacionentreventanasguia.Contact
 import com.example.navegacionentreventanasguia.ContactViewModel
 import androidx.compose.ui.text.input.KeyboardType
+import androidx.compose.ui.res.painterResource
+import com.example.navegacionentreventanasguia.R
 
 @Composable
 fun ScreenA(navController: NavController, contactViewModel: ContactViewModel) {
@@ -50,6 +52,15 @@ fun ScreenA(navController: NavController, contactViewModel: ContactViewModel) {
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Center
         ) {
+            // Imagen de contacto en la parte superior
+            Image(
+                painter = painterResource(id = R.drawable.paisaje), // Reemplaza con tu imagen de contacto
+                contentDescription = "Imagen de Contacto",
+                modifier = Modifier
+                    .size(100.dp) // Ajusta el tamaño según sea necesario
+                    .padding(bottom = 16.dp) // Espaciado inferior
+            )
+
             Text("Agenda de Contactos", fontSize = 24.sp, color = Color.Black)
 
             Spacer(modifier = Modifier.height(16.dp))
