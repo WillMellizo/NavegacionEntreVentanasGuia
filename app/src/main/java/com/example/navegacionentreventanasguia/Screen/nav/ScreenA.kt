@@ -54,7 +54,7 @@ fun ScreenA(navController: NavController, contactViewModel: ContactViewModel) {
         ) {
             // Imagen de contacto en la parte superior
             Image(
-                painter = painterResource(id = R.drawable.paisaje), // Reemplaza con tu imagen de contacto
+                painter = painterResource(id = R.drawable.contacto), // Reemplaza con tu imagen de contacto
                 contentDescription = "Imagen de Contacto",
                 modifier = Modifier
                     .size(100.dp) // Ajusta el tamaño según sea necesario
